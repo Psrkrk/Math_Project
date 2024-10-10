@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.templeton.org/wp-content/uploads/2023/08/Mathematics-Article-BANNER-1-scaled.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.banner {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 255, 0.7)); /* Gradient background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Keep it narrow for a vertical banner */
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.banner:hover {
+    transform: translateY(-5px); /* Slightly raise the banner on hover */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+h2 {
+    color: #0047ab; /* Attractive blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 28px; /* Increased font size for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.container {
+    margin-top: 20px; /* Space between title and input section */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%; /* Full width for input groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark color for labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Increased padding for better appearance */
+    border: 2px solid #0047ab; /* Blue border */
+    border-radius: 10px;
+    font-size: 16px; 
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+input:focus {
+    border-color: #002a55; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 71, 171, 0.5); /* Glow effect on focus */
+}
+
+button {
+    background-color: #0047ab; /* Blue background for the button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.3s; /* Animation on hover */
+}
+
+button:hover {
+    background-color: #003f7f; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#output {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #333; /* Change text color for better visibility */
+    font-weight: bold; /* Make output bold */
+    font-size: 18px; /* Optional: Increase font size for better visibility */
+}
